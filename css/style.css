@@ -1,0 +1,671 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    box-shadow: 0 5px 5px -7px black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar{
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+    position: relative;
+}
+
+.telephone-number {
+    display: flex;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.title{
+    background:url('../img/background.png' ) center center/cover no-repeat; 
+    min-height: 850px;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button:hover{
+    opacity: 80%;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    margin: 0 ;
+    align-items:center;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.m-menu{
+    display: none;
+}
+
+.is-open{
+    opacity:1 ;
+    visibility: visible;
+    transform: translateX(0);
+ }
+
+.menu-item:not(:last-child){
+    margin-right: 15px;
+}
+
+.menu-link{
+    text-decoration: none;
+    color:#000;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-link:hover{
+    color:#FE9F31;
+}
+
+.main{   
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.button-main:hover{
+    fill: #FE9F31; 
+}
+
+.text-logo{
+    color: #FFF;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 35px;
+}
+
+.description{
+    color: #FFF;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 60px;
+    width:650px;
+}
+
+.Advantages{
+    min-height: 600px;
+}
+
+.Advantages-text{
+    padding-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.Advantages-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 180px;
+    margin-top: 170px;
+}
+
+.Advantages-icons{
+    display: flex;
+    flex-direction:column ;
+    width: 120px;
+    height: 105px;
+}
+
+.Advantages-text-icons{
+    padding-top: 10px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.About-us{
+    min-height: 350px;
+}
+
+.About-us-title{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.about-us-container{
+    margin-bottom: 100px;
+}
+
+
+.About-us-title{
+    padding-bottom: 50px;
+}
+
+.about-us-textFirst{
+    padding-bottom: 50px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+}
+.about-us-textSecond{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.mailing{
+    min-height: 100px;
+    background-color: #FE9F31;
+}
+
+.malling-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+
+.text-malling{
+    width:315px;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.features{
+    min-height: 370px;
+}
+
+.features-title{
+    padding-top:60px ;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.features-textBlock:not(last-child){
+    padding-top:25px ;
+   
+}
+
+.textBlock:not(last-child){
+    padding-bottom: 10px;
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.features-text{
+    padding-top: 25px;
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.catalog {
+    min-height: 650px;
+    background-color:#fbfbfb;
+}
+.card-block{
+    position: relative;
+    width: 305px;
+    height: 430px;
+    box-shadow:1px 1px 1px 1px rgb(148, 138, 138);
+    background-color:#FFF;
+    
+}
+
+.catalog-title{
+    padding-bottom: 45px;
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.card-type{
+    position: inherit;
+    padding-top: 18px;
+    z-index: 2;
+}
+
+.scooter-img{
+    position: inherit;
+    z-index: 1;
+    width: 256px;
+    height: 280px;
+    
+}
+
+.type-link:hover{
+  opacity: 70%;
+}
+
+ .catalog-menu{
+    list-style-type: none;
+    display: flex;
+}
+
+.catalog-navbar{
+    display: flex;
+    padding-top: 45px;
+    justify-content: space-between;
+}
+
+.catalog-menu-item{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    
+}
+
+.catalog-menu-item:hover{
+    color:#FE9F31;
+}
+
+.catalog-menu-item:not(:last-child){
+    padding-right: 20px;
+}
+
+.scooter-text{
+    text-align: left;
+    padding-top:3px ;
+    padding-left: 30px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.scooter-price{
+    padding-top:5px;
+    padding-left:30px ;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+}
+
+.consultant{
+    min-height: 500px;
+}
+
+.consultant-title{
+    padding-top: 80px;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 50px;
+}
+
+.consultant-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.consultant-text-name{
+    padding-bottom: 5px;
+    padding-top:30px ;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-post{
+    padding-bottom: 20px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.consultant-button{
+    /* opacity: 70%; */
+    background: #FE9F31;
+    border-radius: 10px;
+    background: #FE9F31;
+    width: 112px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #FFF;
+    box-shadow: none;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-width: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.consultant-button:hover{
+    opacity: 70%;
+}
+
+.brands{
+    background-color:#fbfbfb;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-text{
+    color: #9B9B9B;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 7.5px;
+}
+
+.information{
+    min-height: 500px;
+}
+
+.information-title{
+    padding-top: 60px;
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.information-block{
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+footer{
+    margin-bottom: 40px;
+}
+
+.footer-logo{
+    margin-bottom: 9px;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-item{
+   margin-bottom: 5px;
+   color: #8191A6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.footer{
+    background-color:#000;
+    height:30px ;
+    width: 100%;
+}
+
+.copyright{
+    margin-top: 20px;
+    color: #8191A6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-text{
+    color: #8191A6;    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+}
+.modal-content-call{
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 400px;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #FE9F31;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+
+
+
+@media(max-width:1400px){
+    .blocks{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .card-block{
+        margin-top: 20px;
+    }
+
+    .consultant-card-block{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .information-block{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media(max-width:768px){
+    .malling-content{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        
+    }
+
+    .m-menu{
+        display: block;
+        background-color: transparent;
+        border:none;
+        width: 40px ;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .is-open{
+        opacity:1 ;
+        visibility: visible;
+        transform: translateX(0);
+     }
+
+     .menu{
+        position: absolute;
+        left: 0;
+        top: 40px;
+        padding: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color:#621402;
+        z-index: 9;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: opacity 0.6s, transform 0.6s;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block-features{
+        display: flex;
+        flex-direction: column;
+    }
+}
